@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld40.png",
+      "filename" : "knowledge40.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld60.png",
+      "filename" : "knowledge60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld58.png",
+      "filename" : "knowledge58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld87.png",
+      "filename" : "knowledge87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld80.png",
+      "filename" : "knowledge80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld120.png",
+      "filename" : "knowledge120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld120-1.png",
+      "filename" : "knowledge120-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "MyThoughtWorld180.png",
+      "filename" : "knowledge180.png",
       "scale" : "3x"
     },
     {
@@ -96,7 +96,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "MyThoughtWorld1024.png",
+      "filename" : "knowledge.png",
       "scale" : "1x"
     }
   ],
