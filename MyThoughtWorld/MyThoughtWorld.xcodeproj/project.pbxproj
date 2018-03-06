@@ -44,8 +44,8 @@
 		D2F6745F204EC8FC00307386 = {
 			isa = PBXGroup;
 			children = (
-				D2F6747D204EC9AD00307386 /* Source */,
 				D2F6746A204EC8FC00307386 /* MyThoughtWorld */,
+				D2F6747D204EC9AD00307386 /* Source */,
 				D2F67469204EC8FC00307386 /* Products */,
 			);
 			sourceTree = "<group>";
