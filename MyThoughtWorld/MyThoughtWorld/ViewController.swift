@@ -18,10 +18,6 @@ class ViewController: UIViewController {
         pin(.change)
     }
     
-    @IBAction func pasif(_ sender: UIButton) {
-        pin(.deactive)
-    }
-    
     @IBAction func dogrula(_ sender: UIButton) {
         pin(.validate)
     }
