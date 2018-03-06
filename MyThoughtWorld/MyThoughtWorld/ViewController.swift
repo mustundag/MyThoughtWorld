@@ -10,16 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func olustur(_ sender: UIButton) {
+        pin(.create)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func degistir(_ sender: UIButton) {
+        pin(.change)
     }
-
-
+    
+    @IBAction func pasif(_ sender: UIButton) {
+        pin(.deactive)
+    }
+    
+    @IBAction func dogrula(_ sender: UIButton) {
+        pin(.validate)
+    }
+    
+    
+    func pin(_ mode: ALMode) {
+        
+        var appearance = ALAppearance()
+        appearance.image = UIImage(named: "face")!
+        appearance.title = "Muhittin Ustundag"
+        appearance.isSensorsEnabled = true
+        
+        AppLocker.present(with: mode, and: appearance)
+    }
 }
 
