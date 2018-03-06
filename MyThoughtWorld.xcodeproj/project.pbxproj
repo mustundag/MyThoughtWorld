@@ -13,9 +13,13 @@
 		D250D71E204E8BA100E1458A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D250D71C204E8BA100E1458A /* Main.storyboard */; };
 		D250D720204E8BA100E1458A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D250D71F204E8BA100E1458A /* Assets.xcassets */; };
 		D250D723204E8BA100E1458A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D250D721204E8BA100E1458A /* LaunchScreen.storyboard */; };
+		E973C7320038046F3482C335 /* Pods_MyThoughtWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83ACBBB4FF462055E82AA46 /* Pods_MyThoughtWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21BE2D7E908FDEA21A9993CD /* Pods-MyThoughtWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThoughtWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyThoughtWorld/Pods-MyThoughtWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		23AD6B418B95DCD5E8A286AE /* Pods-MyThoughtWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThoughtWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyThoughtWorld/Pods-MyThoughtWorld.release.xcconfig"; sourceTree = "<group>"; };
+		A83ACBBB4FF462055E82AA46 /* Pods_MyThoughtWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyThoughtWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D250D713204E8BA100E1458A /* MyThoughtWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyThoughtWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D250D716204E8BA100E1458A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D250D718204E8BA100E1458A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E973C7320038046F3482C335 /* Pods_MyThoughtWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429C7CF04B1DC9E422F58080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21BE2D7E908FDEA21A9993CD /* Pods-MyThoughtWorld.debug.xcconfig */,
+				23AD6B418B95DCD5E8A286AE /* Pods-MyThoughtWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D250D70A204E8BA100E1458A = {
 			isa = PBXGroup;
 			children = (
 				D250D715204E8BA100E1458A /* MyThoughtWorld */,
 				D250D714204E8BA100E1458A /* Products */,
+				429C7CF04B1DC9E422F58080 /* Pods */,
+				E0802828A49117BCF8717DAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = MyThoughtWorld;
 			sourceTree = "<group>";
 		};
+		E0802828A49117BCF8717DAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83ACBBB4FF462055E82AA46 /* Pods_MyThoughtWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D250D727204E8BA100E1458A /* Build configuration list for PBXNativeTarget "MyThoughtWorld" */;
 			buildPhases = (
+				081BF0179CA40628DA4E33E7 /* [CP] Check Pods Manifest.lock */,
 				D250D70F204E8BA100E1458A /* Sources */,
 				D250D710204E8BA100E1458A /* Frameworks */,
 				D250D711204E8BA100E1458A /* Resources */,
+				D1E887254A17B00E0C93489D /* [CP] Embed Pods Frameworks */,
+				ADCC273908D5211FAEF03B5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081BF0179CA40628DA4E33E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyThoughtWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADCC273908D5211FAEF03B5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyThoughtWorld/Pods-MyThoughtWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E887254A17B00E0C93489D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyThoughtWorld/Pods-MyThoughtWorld-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CBPinEntryView/CBPinEntryView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CBPinEntryView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyThoughtWorld/Pods-MyThoughtWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D250D70F204E8BA100E1458A /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		D250D728204E8BA100E1458A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BE2D7E908FDEA21A9993CD /* Pods-MyThoughtWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +373,7 @@
 		};
 		D250D729204E8BA100E1458A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AD6B418B95DCD5E8A286AE /* Pods-MyThoughtWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
