@@ -11,15 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func olustur(_ sender: UIButton) {
-        pin(.create)
-    }
-    
-    @IBAction func degistir(_ sender: UIButton) {
-        pin(.change)
-    }
-    
-    @IBAction func dogrula(_ sender: UIButton) {
+        
+        
         pin(.validate)
+        
+        
     }
     
     
@@ -27,10 +23,12 @@ class ViewController: UIViewController {
         
         var appearance = ALAppearance()
         appearance.image = UIImage(named: "face")!
-        appearance.title = "Muhittin Ustundag"
+        //appearance.title = "Muhittin Ustundag"
         appearance.isSensorsEnabled = true
         
         AppLocker.present(with: mode, and: appearance)
+        
+        
     }
 }
 
