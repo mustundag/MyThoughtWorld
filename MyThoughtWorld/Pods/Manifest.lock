@@ -1,0 +1,12 @@
+PODS:
+  - YNExpandableCell (1.1.0)
+
+DEPENDENCIES:
+  - YNExpandableCell
+
+SPEC CHECKSUMS:
+  YNExpandableCell: 47bf7cff721aa535c0e9e1163bf22b5573441bb4
+
+PODFILE CHECKSUM: a89bc63942cb8bc3dbe7eee55673b0ff2d0668aa
+
+COCOAPODS: 1.4.0.beta.2
