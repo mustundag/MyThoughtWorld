@@ -13,22 +13,14 @@ class ViewController: UIViewController {
     @IBAction func olustur(_ sender: UIButton) {
         
         
-        pin(.validate)
-        
-        
-    }
-    
-    
-    func pin(_ mode: ALMode) {
-        
         var appearance = ALAppearance()
         appearance.image = UIImage(named: "face")!
-        //appearance.title = "Muhittin Ustundag"
         appearance.isSensorsEnabled = true
         
-        AppLocker.present(with: mode, and: appearance)
-        
-        
+        AppLocker.present(with: .validate, and: appearance)
+
+        performSegue(withIdentifier: "tableView", sender: self)
     }
+
 }
 
